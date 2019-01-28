@@ -6,8 +6,8 @@
 .linkedin-icon {
     color: blue;
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 35px;
+    right: 45px;
 }
 
 .content-container {
@@ -35,8 +35,9 @@
     background-position: center;
     will-change: opacity;
     transition: opacity .3s;
+    cursor: pointer;
+    overflow: hidden;
   }
-  
   
 
   .slide-button:hover, .slide-button-select {
@@ -45,7 +46,6 @@
     pointer-events: none;
     transition: background-color .4s, width 4s cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;
   }
-  
   
   .slide-button {
     width: 30px;
@@ -87,7 +87,7 @@
     line-height: 150%;
     position: absolute;
     left: 10%;
-    width: 100%;
+    width: 75%;
     height: 100%;
     opacity: 0;
     font-size: 3.5em;
@@ -99,9 +99,36 @@
     transition: 1s;
   }
   
-  .test {
+  .next-button {
     position: absolute;
-    top:50%;
-    left: 50%;
+    top:80%;
+    left: 89%;
     z-index: 2001;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
   }
+
+  .next-button:hover {
+    transform: scale(1.2);
+  }
+
+  .btn {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* border-color: blue; */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+
+  

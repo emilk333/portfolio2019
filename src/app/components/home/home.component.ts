@@ -36,16 +36,17 @@ export class HomeComponent implements OnInit {
   }
 
   next(x) {
+    console.log(x)
     this.downSelected(x);
   }
 
   selected(x) {
-    console.log(x);
     this.downSelected(x);
     this.selectedIndex = x;
   }
 
   downSelected(i) {
+    console.log(i)
   this.transform =  100 - (i) * 50;
     this.selectedIndex = this.selectedIndex + 1;
     // if selectedIndex is higher than 4 projects, start the cycle again

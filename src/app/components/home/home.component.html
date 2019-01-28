@@ -1,5 +1,5 @@
 
-<div class="container-fluid full-view-width no-scroll">
+<div class="container-fluid full-view-width">
 
 
   <a href="http://www.linkedin.com/in/emil-kristoffersen-95a890b8" target="_blank">
@@ -23,7 +23,13 @@
         </div>
       </div>
 
-      <button class="test" *ngFor="let i of sliderArray; let x = index" (click)="next(x)"></button>
+      <!-- <button class="btn next-button" *ngFor="let i of sliderArray; let x = index" (click)="next(x)"></button>
+          <fa-icon [icon]="['fas', 'arrow-down']"(click)="next(x)"></fa-icon>
+      </button> -->
+
+      <div class="next-button">
+          <fa-icon [icon]="['fas', 'arrow-down']"(click)="next(x)"></fa-icon>
+      </div>
       
       <div class="slider">
         <div class="slide-button-parent-container"  *ngFor="let i of sliderArray; let x = index" (click)="selected(x)">

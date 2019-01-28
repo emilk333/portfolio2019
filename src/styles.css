@@ -37,9 +37,32 @@
     position: absolute;
     /* bootstrap block overwrite */
     display: flex !important;
-    top: 45%;
+    top: 25%;
     /* left: -9em; */
-    margin:0 0 0 -120px;
+    margin:0 0 0 -60px;
+}
+
+.navigation h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.stripe-left {
+    border-left: 2px solid blue;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 62%;
+    left: 100px;
+}
+
+.stripe-right {
+    border-right: 2px solid blue;
+    position: absolute;
+    height: 460px;
+    width: 300px;
+    top: 15%;
+    right: 60px;
 }
 
 .navigation-padding {
