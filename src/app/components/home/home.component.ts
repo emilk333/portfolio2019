@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,13 +16,13 @@ export class HomeComponent implements OnInit {
   transform: number;
 
   sliderArray = [
-    {img: 'assets/img/dog.jpg', alt: 'dog', text: 'here is a pic of a dog'},
-    {img: 'assets/img/rose.jpg', alt: 'rose', text: 'here is a pic of a rose'},
-    {img: 'assets/img/burger.jpg', alt: 'burger', text: 'here is a pic of a burger'},
-    {img: 'assets/img/burger.jpg', alt: 'burger', text: 'here is a pic of a burger'},
+    {img: 'assets/img/dog.jpg', alt: 'dog', text: 'here is a pic of a dog', url: "/item1"},
+    {img: 'assets/img/rose.jpg', alt: 'rose', text: 'here is a pic of a rose', url: "/item2"},
+    {img: 'assets/img/burger.jpg', alt: 'burger', text: 'here is a pic of a burger', url: "/item3"},
+    {img: 'assets/img/burger.jpg', alt: 'burger', text: 'here is a pic of a burger', url: "/item4"},
   ];
 
-  constructor() {
+  constructor(private router: Router) {
     this.selectedIndex = 0;
     this.transform = 100;
   }
@@ -29,20 +30,26 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  inspectProject(x) {
+    console.log(x);
+    this.router.navigateByUrl(this.sliderArray[x].url);
+  }
+
+  next(x) {
+    this.downSelected(x);
+  }
+
   selected(x) {
+    console.log(x);
     this.downSelected(x);
     this.selectedIndex = x;
   }
 
-  keySelected(x) {
-    this.downSelected(x);
-    this.selectedIndex = x;
-  }
-   
   downSelected(i) {
   this.transform =  100 - (i) * 50;
     this.selectedIndex = this.selectedIndex + 1;
-    if(this.selectedIndex > 4) {
+    // if selectedIndex is higher than 4 projects, start the cycle again
+    if(this.selectedIndex > 3) {
       this.selectedIndex = 0;
     }
   }

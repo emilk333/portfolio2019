@@ -16,11 +16,19 @@ import { HomeComponent } from './components/home/home.component';
 import { Item1Component } from './components/projects/item1/item1.component';
 import { Item2Component } from './components/projects/item2/item2.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { Item3Component } from './components/projects/item3/item3.component';
+import { Item4Component } from './components/projects/item4/item4.component';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'item1', component: Item1Component },
+  { path: 'item2', component: Item2Component },
+  { path: 'item3', component: Item3Component },
+  { path: 'item4', component: Item4Component },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
+  
 ];
 
 @NgModule({
@@ -30,7 +38,9 @@ const appRoutes: Routes = [
     HomeComponent,
     Item1Component,
     Item2Component,
-    ContactComponent
+    ContactComponent,
+    Item3Component,
+    Item4Component,
   ],
   imports: [
     BrowserModule,
