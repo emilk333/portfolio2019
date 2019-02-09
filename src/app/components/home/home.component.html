@@ -1,6 +1,11 @@
 
+
 <div class="container-fluid full-view-width">
 
+  <!-- <div class="logo-container">
+    <img src="assets/img/logo-portfolio-test.png" alt="logo">
+  </div> -->
+  <div class="stripe-right"></div>
 
   <a href="http://www.linkedin.com/in/emil-kristoffersen-95a890b8" target="_blank">
     <fa-icon [icon]="['fab', 'linkedin']" size="2x" class="linkedin-icon">  
@@ -11,24 +16,27 @@
   <div class="row">
     <div class="content-container col-12">
 
-      <div class="img-container"  *ngFor="let i of sliderArray; let select = index;" (click)="inspectProject(selectedIndex)" 
-            [ngClass]="{'selected': select == selectedIndex}">
+      <div class="img-container"  *ngFor="let i of sliderArray; let select = index;" (click)="inspectProject(selectedIndex)"  
+           [ngClass]="{'selected': select == selectedIndex}">
         <img src="{{i.img}}" alt="{{i.alt}}" >
         <div [ngStyle]="{'transform': 'translateY('+ transform + '%' +')', 'transition': '.8s'}">
-          <div class="text-container">
-            <div class="page-text" *ngFor="let i of sliderArray;let select = index;" [ngClass]="{'selected': select == selectedIndex}">
-              <h1>{{i.text}}</h1>
-            </div>
-          </div>
         </div>
       </div>
+
+      <div class="text-container">
+          <div class="page-text" *ngFor="let i of sliderArray;let select = index;" [ngClass]="{'selected': select == selectedIndex}">
+            <h1>{{i.text}}</h1>
+            <div class="bar"></div>
+            <p>{{i.description}}</p>
+          </div>
+        </div>
 
       <!-- <button class="btn next-button" *ngFor="let i of sliderArray; let x = index" (click)="next(x)"></button>
           <fa-icon [icon]="['fas', 'arrow-down']"(click)="next(x)"></fa-icon>
       </button> -->
 
       <div class="next-button">
-          <fa-icon [icon]="['fas', 'arrow-down']"(click)="next(x)"></fa-icon>
+          <fa-icon [icon]="['fas', 'arrow-down']" (click)="next(x)"></fa-icon>
       </div>
       
       <div class="slider">

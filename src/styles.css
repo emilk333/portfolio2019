@@ -10,6 +10,24 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Avenir';
+    src: url('assets/fonts/Avenir/AvenirNextLTPro-Bold.otf') format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/Campton/Campton-BoldDEMO.ttf') format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Campton-light';
+    src: url('assets/fonts/Campton/Campton-LightDEMO.ttf') format("truetype");
+    font-weight: bold;
+}
+
 .fa-2x {
     font-size: 24px!important;
 }
@@ -37,32 +55,14 @@
     position: absolute;
     /* bootstrap block overwrite */
     display: flex !important;
-    top: 25%;
+    top: 23%;
     /* left: -9em; */
-    margin:0 0 0 -60px;
+    margin:0 0 0 -45px;
 }
 
 .navigation h3 {
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.stripe-left {
-    border-left: 2px solid blue;
-    position: absolute;
-    height: 200px;
-    width: 300px;
-    top: 62%;
-    left: 100px;
-}
-
-.stripe-right {
-    border-right: 2px solid blue;
-    position: absolute;
-    height: 460px;
-    width: 300px;
-    top: 15%;
-    right: 60px;
+    /* text-transform: uppercase; */
+    font-weight: 400;
 }
 
 .navigation-padding {
@@ -71,16 +71,24 @@
     position: relative;
 }
 
+.stripe-left {
+    border-left: 2px solid #badffa;
+    position: absolute;
+    height: 190px;
+    width: 300px;
+    top: 60%;
+    left: 100px;
+}
 
-  h3 > a {
+  /* h3 > a {
     position: relative;
-    color: #000;
+    color:  #badffa;
     text-decoration: none;
   }
   
   h3 > a:hover {
     position: relative;
-    color: #000;
+    color:  #badffa;
     text-decoration: none;
   }
 
@@ -93,7 +101,7 @@
     height: 12px;
     bottom: 0;
     left: 10px;
-    background-color: blue;
+    background-image: linear-gradient(#FFD200, #F7971E);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -105,30 +113,47 @@
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  } */
+
+
+h3 > a {
+    position: relative;
+    /* color:  #badffa; */
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+    to right,
+    #F7971E,
+    #FFD200 50%,
+    #badffa 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+
+h3 > a:hover {
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    background-position: 0%;
+}
+
+
+body{ 
+    /* The image used */
+    background-image: url("assets/img/backgroundimg-test.png");
+  
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
- 
-
-body {
-    background-image: linear-gradient(-140deg, #f2f2f9, #efecea);
-}
-
-h1 {
-    font-family: 'Aileron';     
-    font-size: 5em;
-}
-
-h2 {
-    font-family: 'Aileron';     
-    font-size: 100px;
-}
+  
 
 h3 {
-    font-family: 'Aileron';     
+    font-family: 'Campton';     
     font-size: 20px;
     position: relative;
 }
-
 
 .full-view-width {
     height: 100vh;

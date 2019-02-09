@@ -1,10 +1,13 @@
 @import "node_modules/@fortawesome/fontawesome-svg-core/styles.css";
 
 
+h1 {
+  font-family: 'Campton-light';
+}
 
 
 .linkedin-icon {
-    color: blue;
+    color:  #badffa;
     position: absolute;
     bottom: 35px;
     right: 45px;
@@ -13,16 +16,16 @@
 .content-container {
     position: absolute;
     height: 70vh;
-    width: 70vw;
+    width: 55vw;
     top: 15%;
-    left: 7%; 
+    left: 25%; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
 }
 
   img {
-    height: 612px;
+    height: 600px;
     width: 100%;
     object-fit: cover;
   }
@@ -30,7 +33,7 @@
   .img-container {
     position: absolute;
     width: 100%;
-    height: 85vh;
+    height: 72vh;
     opacity: 0;
     background-position: center;
     will-change: opacity;
@@ -38,11 +41,28 @@
     cursor: pointer;
     overflow: hidden;
   }
+
+  .logo-container {
+    /*
+    CENTER LOGO
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;  */
+    position: absolute;
+    left: 4em;
+    margin-top: 40px;
+  }
+
+  .logo-container img {
+    width: 80px;
+    height: auto;
+  }
   
 
   .slide-button:hover, .slide-button-select {
     width: 64px !important;
-    background-color: rgba(255,255,255,1) !important;
+    background-color: rgba(186,223,250,1) !important;
     pointer-events: none;
     transition: background-color .4s, width 4s cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;
   }
@@ -50,7 +70,7 @@
   .slide-button {
     width: 30px;
     height: 10px;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(186,223,250,.5);
     cursor: pointer;
     position: absolute;
   }
@@ -74,9 +94,11 @@
   }
   
   .text-container {
-    /* problemet med 100vh ligger her  */
-    margin-top: -550px;
-    height: 30vh;
+    z-index: 1002;
+    position: absolute;
+    left: -40%;
+    width: 1000px;
+    top: 13em;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -91,8 +113,16 @@
     height: 100%;
     opacity: 0;
     font-size: 3.5em;
-    color: blue;
+    color: #badffa;
   } 
+
+  .page-text h1 {
+    margin: 0;
+  }
+
+  .page-text p {
+    margin: 0 0 0 8px;
+  }
   
   .selected {
     opacity: 1;
@@ -102,9 +132,9 @@
   .next-button {
     position: absolute;
     top:80%;
-    left: 89%;
+    left: 86%;
     z-index: 2001;
-    color: white;
+    color: #badffa;
     font-size: 28px;
     cursor: pointer;
     transition: all .2s ease-in-out;
@@ -114,21 +144,30 @@
     transform: scale(1.2);
   }
 
-  .btn {
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.3);
-    /* border-color: blue; */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-  }
+ 
 
-  .btn:focus {
-    outline: none;
-  }
+.bar {
+  margin: 15px 0 -20px 8px;
+  border-bottom: 10px solid;
+  border-image: linear-gradient(to right, #F7971E 0%, #FFD200 100%);
+  border-image-slice: 1;
+  border-width: 10px;
+  width: 100px;
+}
 
   
+
+p {
+  font-family: 'Campton-light';
+  font-size: 16px;
+}
+
+.stripe-right {
+  border-right: 2px solid  #badffa;
+  position: absolute;
+  height: 460px;
+  width: 300px;
+  top: 15%;
+  right: 60px;
+}
+

@@ -1,0 +1,28 @@
+
+h1 {
+    font-family: 'Campton';
+    color:  #badffa;
+    font-size: 4.5em;
+  }
+
+p {
+    font-family: 'Campton-light';
+    color:  #badffa;
+
+}
+
+
+.content-container {
+    position: absolute;
+    height: auto;
+    width: 70vw;
+    left: 14%;
+    top: 180px;
+}
+
+
+.about-text {
+    max-width: 700px;
+    text-align: justify;
+  text-justify: inter-word;
+}

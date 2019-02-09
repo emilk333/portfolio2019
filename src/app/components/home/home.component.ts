@@ -16,9 +16,9 @@ export class HomeComponent implements OnInit {
   transform: number;
 
   sliderArray = [
-    {img: 'assets/img/dog.jpg', alt: 'dog', text: 'here is a pic of a dog', url: "/item1"},
-    {img: 'assets/img/rose.jpg', alt: 'rose', text: 'here is a pic of a rose', url: "/item2"},
-    {img: 'assets/img/burger.jpg', alt: 'burger', text: 'here is a pic of a burger', url: "/item3"},
+    {img: 'assets/img/plant.jpg', alt: 'plant', text: 'here is a pic of a plant', description: 'oajwdoaiwjdiw', url: "/item1"},
+    {img: 'assets/img/woman.jpg', alt: 'rose', text: 'here is a pic of a rose', url: "/item2"},
+    {img: 'assets/img/bar.jpg', alt: 'burger', text: 'here is a pic of a burger', url: "/item3"},
     {img: 'assets/img/burger.jpg', alt: 'burger', text: 'here is a pic of a burger', url: "/item4"},
   ];
 
@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
 
   downSelected(i) {
     console.log(i)
-  this.transform =  100 - (i) * 50;
+    this.transform =  100 - (i) * 50;
     this.selectedIndex = this.selectedIndex + 1;
     // if selectedIndex is higher than 4 projects, start the cycle again
     if(this.selectedIndex > 3) {
