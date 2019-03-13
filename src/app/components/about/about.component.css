@@ -11,6 +11,10 @@ p {
 
 }
 
+.title-text {
+    padding-left: 60px;
+    padding-top: 15px;
+}
 
 .content-container {
     position: absolute;
@@ -20,9 +24,17 @@ p {
     top: 180px;
 }
 
-
 .about-text {
+    padding-top: 50px;
     max-width: 700px;
     text-align: justify;
-  text-justify: inter-word;
+    text-justify: inter-word;
 }
+
+img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: 50% 1%;
+  }

@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation, AfterViewChecked, ElementRef,  HostListener  } from '@angular/core';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Router } from '@angular/router';
+import { MouseWheel } from '../../directives/mouse-wheel.directive';
 
 
 @Component({
@@ -9,8 +10,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css'],
   encapsulation: ViewEncapsulation.ShadowDom
 })
+
+
 export class HomeComponent implements OnInit {
 
+  mouseWheelDir: string = '';
   faLinkedin = faLinkedin;
   selectedIndex:number;
   transform: number;
@@ -53,6 +57,17 @@ export class HomeComponent implements OnInit {
     if(this.selectedIndex > 3) {
       this.selectedIndex = 0;
     }
+  }
+
+  mouseWheelUpFunc(x) {
+    this.mouseWheelDir = 'upward direction';
+    console.log(this.mouseWheelDir);
+    this.next(x);
+  }
+
+  mouseWheelDownFunc() {
+    this.mouseWheelDir = 'downward direction';
+    console.log(this.mouseWheelDir);
   }
 
 

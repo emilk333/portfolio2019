@@ -1,0 +1,48 @@
+
+h1 {
+    font-family: 'Campton';
+    color:  #badffa;
+    font-size: 4.5em;
+  }
+
+p {
+    font-family: 'Campton-light';
+    color:  #badffa;
+
+}
+
+.content-container {
+    position: relative;
+    margin-left: 15vw;
+    margin-top: 15vh;
+}
+
+.title {
+    
+}
+
+.bar {
+    margin: 15px 0 -20px 8px;
+    border-bottom: 10px solid;
+    border-image: linear-gradient(to right, #F7971E 0%, #FFD200 100%);
+    border-image-slice: 1;
+    border-width: 5px;
+    width: 200px;
+  }
+
+.logo-bar {
+    margin-top: 45px;
+    padding-left: 15px;
+    float: left;
+}
+
+img {
+    height: 40px;
+    object-fit: cover;
+}
+
+.content-text {
+    margin-top: 150px;
+    text-align: justify;
+    text-justify: inter-word;
+}

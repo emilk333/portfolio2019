@@ -12,4 +12,10 @@ export class Item2Component implements OnInit {
   ngOnInit() {
   }
 
+  logoArray = [
+    {img: 'assets/img/angularpng.png'},
+    {img: 'assets/img/bootstrap.png'},
+    {img: 'assets/img/firestore.png'},
+  ]
+
 }
