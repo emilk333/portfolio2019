@@ -11,14 +11,8 @@ p {
 
 }
 
-.content-container {
-    position: relative;
-    margin-left: 15vw;
-    margin-top: 15vh;
-}
-
 .title {
-    
+    margin-top: 150px;
 }
 
 .bar {
@@ -36,7 +30,7 @@ p {
     float: left;
 }
 
-img {
+.logo-bar img {
     height: 40px;
     object-fit: cover;
 }
@@ -46,3 +40,11 @@ img {
     text-align: justify;
     text-justify: inter-word;
 }
+
+.ipad img {
+    height: 700px;
+    margin-left: -200px;
+    overflow: hidden;
+    width: auto;
+}
+

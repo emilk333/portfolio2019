@@ -18,4 +18,7 @@ export class Item2Component implements OnInit {
     {img: 'assets/img/firestore.png'},
   ]
 
+  imagePath_1:string = "assets/img/todo/s10_mockup.svg";
+  imagePath_2:string = "assets/img/todo/ipad_mockup.svg";
+
 }

@@ -28,57 +28,7 @@
     font-weight: bold;
 }
 
-.fa-2x {
-    font-size: 24px!important;
-}
 
-.rotate {
-    /* Safari */
-    -webkit-transform: rotate(-90deg);
-    
-    /* Firefox */
-    -moz-transform: rotate(-90deg);
-    
-    /* IE */
-    -ms-transform: rotate(-90deg);
-    
-    /* Opera */
-    -o-transform: rotate(-90deg);
-    
-    /* Internet Explorer */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-
-
-.navigation {
-    position: absolute;
-    /* bootstrap block overwrite */
-    display: flex !important;
-    top: 23%;
-    /* left: -9em; */
-    margin:0 0 0 -45px;
-}
-
-.navigation h3 {
-    /* text-transform: uppercase; */
-    font-weight: 400;
-}
-
-.navigation-padding {
-    /* padding-left: 80px; */
-    margin:0 80px 10px 0;
-    position: relative;
-}
-
-.stripe-left {
-    border-left: 2px solid #badffa;
-    position: absolute;
-    height: 190px;
-    width: 300px;
-    top: 60%;
-    left: 100px;
-}
 
   /* h3 > a {
     position: relative;

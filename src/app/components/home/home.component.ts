@@ -32,6 +32,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+  
   }
 
   inspectProject(x) {

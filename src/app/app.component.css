@@ -1,0 +1,137 @@
+.fa-2x {
+    font-size: 24px!important;
+}
+
+.rotate {
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.navigation-mobile {
+    position: relative;
+    z-index: 1009;
+
+}
+
+.center {
+   text-align: center;
+}
+
+.navigation {
+    position: absolute;
+    z-index: 1004;
+    /* bootstrap block overwrite */
+    display: flex !important;
+    top: 23%;
+    /* left: -9em; */
+    margin:0 0 0 -45px;
+}
+
+.navigation h3 {
+    /* text-transform: uppercase; */
+    font-weight: 400;
+}
+
+.navigation-padding {
+    /* padding-left: 80px; */
+    margin:0 80px 10px 0;
+    position: relative;
+}
+
+.stripe-left {
+    border-left: 2px solid #badffa;
+    position: absolute;
+    height: 190px;
+    width: 300px;
+    top: 60%;
+    left: 100px;
+}
+
+
+.navigation-icon {
+    float: right;
+    padding: 15px 15px 15px 15px;
+}
+
+
+.navigation-expand {
+    background-color: #212529;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navigation-text-container {
+    padding-top: 200px;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#badffa;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+
+
+  /* more @https://codepen.io/ainalem/pen/LJYRxz 
+  Remember credit  */
+
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 400px) {
+    h3 > a{
+        font-size: 4rem;
+    }
+
+    h3 {
+        padding-top: 70px;
+    }
+
+    .navigation {
+        margin:0 0 0 0;
+    }
+
+    .navigation-padding {
+        margin:0 0 0 0;
+    }
+  }
