@@ -1,0 +1,51 @@
+
+h1 {
+    font-family: 'PlayfairDisplay-Regular';
+    color:  #badffa;
+    font-size: 6em;
+  }
+
+p {
+    font-family: 'Campton-light';
+    color:  #badffa;
+
+}
+
+.title {
+    margin-top: 80px;
+}
+
+
+.bar {
+    background-image: linear-gradient(to right, #F7971E 0%, #FFD200 100%);
+    margin: 5px 0 -20px 8px;
+    border-radius: 3px;
+    height: 10px;
+    width: 100px;
+  }
+    
+
+.logo-bar {
+    margin-top: 45px;
+    padding-left: 15px;
+    float: left;
+}
+
+.logo-bar img {
+    height: 35px;
+    object-fit: cover;
+}
+
+.content-text {
+    margin-top: 150px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.ipad img {
+    height: 700px;
+    margin-left: -200px;
+    overflow: hidden;
+    width: auto;
+}
+

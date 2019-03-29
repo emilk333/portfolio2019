@@ -2,7 +2,7 @@
 
 
 h1 {
-  font-family: 'Campton-light';
+  font-family: 'PlayfairDisplay-Regular';
 }
 
 
@@ -93,28 +93,38 @@ h1 {
     min-height: 10px;
   }
   
+ 
+
+  .text-container p {
+    width: 450px;
+    height: 20px;
+  }
+
   .text-container {
+    cursor: pointer;
+    height: 10vh;
     z-index: 1002;
     position: absolute;
-    left: -40%;
+    left: -45%;
     width: 1000px;
-    top: 13em;
+    top: 8em;
     justify-content: center;
     display: flex;
     align-items: center;
-    flex-direction: row;
-  }
-  
-  .page-text {
+    flex-direction: column;
+  } 
+
+.page-text {
     line-height: 150%;
-    position: absolute;
     left: 10%;
     width: 75%;
     height: 100%;
     opacity: 0;
     font-size: 3.5em;
     color: #badffa;
-  } 
+  }  
+
+  
 
   .page-text h1 {
     margin: 0;
@@ -146,20 +156,19 @@ h1 {
 
  
 
+
 .bar {
-  margin: 15px 0 -20px 8px;
-  border-bottom: 10px solid;
-  border-image: linear-gradient(to right, #F7971E 0%, #FFD200 100%);
-  border-image-slice: 1;
-  border-width: 10px;
+  background-image: linear-gradient(to right, #F7971E 0%, #FFD200 100%);
+  margin: 30px 0 -10px 8px;
+  border-radius: 3px;
+  height: 10px;
   width: 100px;
 }
-
   
 
 p {
   font-family: 'Campton-light';
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .stripe-right {
@@ -177,7 +186,7 @@ p {
 @media screen and (max-width: 400px) {
   
 h1 {
-  font-family: 'Campton-light';
+  font-family: 'PlayfairDisplay-Regular';
   font-size: 40px;
 }
 
@@ -188,7 +197,7 @@ h1 {
 
 .content-container {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     top: 0%;
     left: 0%; 
@@ -260,27 +269,32 @@ h1 {
   }
   
   .text-container {
+    height: 10vh;
     z-index: 1002;
     position: absolute;
-    left: 0%;
-    width: 400px;
-    top: 13em;
+    left: -45%;
+    width: 1000px;
+    top: 8em;
     justify-content: center;
     display: flex;
     align-items: center;
-    flex-direction: row;
-  }
-  
-  .page-text {
+    flex-direction: column;
+  } 
+
+.page-text {
     line-height: 150%;
-    position: absolute;
     left: 10%;
     width: 75%;
     height: 100%;
     opacity: 0;
     font-size: 3.5em;
     color: #badffa;
-  } 
+  }  
+
+  .text-container p {
+    width: 450px;
+    height: 20px;
+  }
 
   .page-text h1 {
     margin: 0;

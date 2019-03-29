@@ -1,8 +1,8 @@
 
 h1 {
-    font-family: 'Campton';
+    font-family: 'PlayfairDisplay-Regular';
     color:  #badffa;
-    font-size: 4.5em;
+    font-size: 6em;
   }
 
 p {
@@ -12,17 +12,18 @@ p {
 }
 
 .title {
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
+
 .bar {
-    margin: 15px 0 -20px 8px;
-    border-bottom: 10px solid;
-    border-image: linear-gradient(to right, #F7971E 0%, #FFD200 100%);
-    border-image-slice: 1;
-    border-width: 5px;
-    width: 200px;
+    background-image: linear-gradient(to right, #F7971E 0%, #FFD200 100%);
+    margin: 5px 0 -20px 8px;
+    border-radius: 3px;
+    height: 10px;
+    width: 100px;
   }
+    
 
 .logo-bar {
     margin-top: 45px;
@@ -31,7 +32,7 @@ p {
 }
 
 .logo-bar img {
-    height: 40px;
+    height: 35px;
     object-fit: cover;
 }
 
