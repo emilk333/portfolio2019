@@ -20,10 +20,10 @@ export class HomeComponent implements OnInit {
   transform: number;
 
   sliderArray = [
-    {img: 'assets/img/plant.jpg', alt: 'plant', text: 'Colors of the ocean', description: 'A Sea slug exhibition', url: "/item1"},
-    {img: 'assets/img/woman.jpg', alt: 'rose', text: 'Write it down yo yo mother', description: 'A to do list application', url: "/item2"},
+    {img: 'assets/img/DB/frontpageDB.png', alt: 'futurenow', text: 'Futurenow', description: 'A Service design master thesis project in collaboration with Danske Bank', url: "/item1"},
+    {img: 'assets/img/VIP/frontpageVIP.png', alt: 'VIP re-design', text: 'VIP system re-imagined', description: 'A Service design project for the Healthcare sector', url: "/item2"},
     {img: 'assets/img/bar.jpg', alt: 'burger', text: 'Vinylondemand jeg knepper dig', description: 'Concept for a vinyl distribution service', url: "/item3"},
-    {img: 'assets/img/burger.jpg', alt: 'burger', text: 'VIP system re-imagined', description: 'A Service design project for the Healthcare sector', url: "/item4"},
+    {img: 'assets/img/todo/frontpageTODO.png', alt: 'todo application', text: 'Todo application', description: 'A todo application written in Angular and Firebase', url: "/item4"},
   ];
 
   constructor(private router: Router) {

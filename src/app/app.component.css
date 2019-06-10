@@ -2,22 +2,22 @@
     font-size: 24px!important;
 }
 
-.rotate {
-    /* Safari */
+/* .rotate {
+    
     -webkit-transform: rotate(-90deg);
     
-    /* Firefox */
+    
     -moz-transform: rotate(-90deg);
     
-    /* IE */
+    
     -ms-transform: rotate(-90deg);
     
-    /* Opera */
+    
     -o-transform: rotate(-90deg);
     
-    /* Internet Explorer */
+    
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
+} */
 
 .navigation-mobile {
     position: relative;
@@ -34,9 +34,7 @@
     z-index: 1004;
     /* bootstrap block overwrite */
     display: flex !important;
-    top: 23%;
-    /* left: -9em; */
-    margin:0 0 0 -45px;
+    padding: 60px 0 0 130px;
 }
 
 .navigation h3 {
@@ -46,17 +44,16 @@
 
 .navigation-padding {
     /* padding-left: 80px; */
-    margin:0 80px 10px 0;
+    margin:0 100px 10px 0;
     position: relative;
 }
 
 .stripe-left {
-    border-left: 2px solid #badffa;
+    border-bottom: 2px solid #badffa;
     position: absolute;
-    height: 190px;
-    width: 300px;
-    top: 60%;
-    left: 100px;
+    height: 70px;
+    width: 130px;
+    left: 480px;
 }
 
 
