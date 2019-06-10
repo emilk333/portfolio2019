@@ -17,7 +17,9 @@ import { Item1Component } from './components/projects/item1/item1.component';
 import { Item2Component } from './components/projects/item2/item2.component';
 import { Item3Component } from './components/projects/item3/item3.component';
 import { Item4Component } from './components/projects/item4/item4.component';
+import { Item5Component } from './components/projects/item5/item5.component';
 import { MouseWheel } from './directives/mouse-wheel.directive';
+
 
 
 const appRoutes: Routes = [
@@ -26,6 +28,7 @@ const appRoutes: Routes = [
   { path: 'item2', component: Item2Component },
   { path: 'item3', component: Item3Component },
   { path: 'item4', component: Item4Component },
+  { path: 'item5', component: Item5Component },
   { path: 'about', component: AboutComponent },
   
 ];
@@ -40,6 +43,7 @@ const appRoutes: Routes = [
     Item3Component,
     Item4Component,
     MouseWheel,
+    Item5Component,
   ],
   imports: [
     BrowserModule,
