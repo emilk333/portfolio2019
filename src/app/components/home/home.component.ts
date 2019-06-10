@@ -20,10 +20,10 @@ export class HomeComponent implements OnInit {
   transform: number;
 
   sliderArray = [
-    {img: 'assets/img/DB/frontpageDB.png', alt: 'futurenow', text: 'Futurenow', description: 'A Service design master thesis project in collaboration with Danske Bank', url: "/item1"},
-    {img: 'assets/img/VIP/frontpageVIP.png', alt: 'VIP re-design', text: 'VIP system re-imagined', description: 'A Service design project for the Healthcare sector', url: "/item2"},
-    {img: 'assets/img/bar.jpg', alt: 'burger', text: 'Vinylondemand jeg knepper dig', description: 'Concept for a vinyl distribution service', url: "/item3"},
-    {img: 'assets/img/todo/frontpageTODO.png', alt: 'todo application', text: 'Todo application', description: 'A todo application written in Angular and Firebase', url: "/item4"},
+    {img: 'assets/img/DB/frontpageDB.png', alt: 'futurenow', text: 'Futurenow', description: 'A Service design master thesis project in collaboration with Danske Bank', url: "/item1", number: "1"},
+    {img: 'assets/img/VIP/frontpageVIP.png', alt: 'VIP re-design', text: 'VIP Redesign', description: 'A Service design project for the Healthcare sector', url: "/item2", number: "2"},
+    {img: 'assets/img/VINYL/frontpageVINYL.png', alt: 'Vinylondemand', text: 'Vinyl On Demand', description: 'Visual identity for a secondhand metal vinylstore', url: "/item3", number: "3"},
+    {img: 'assets/img/todo/frontpageTODO.png', alt: 'todo application', text: 'Todo list', description: 'A todo application written in Angular and Firebase', url: "/item4", number: "4"},
   ];
 
   constructor(private router: Router) {

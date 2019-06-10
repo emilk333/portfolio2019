@@ -1,14 +1,11 @@
+
 <div class="container-fluid full-view-width">
+  
 
-  <!-- <div class="logo-container">
-    <img src="assets/img/logo-portfolio-test.png" alt="logo">
-  </div> -->
-  <!-- <div class="stripe-right"></div> -->
-
-  <!-- <a href="http://www.linkedin.com/in/emil-kristoffersen-95a890b8" target="_blank">
+  <a href="http://www.linkedin.com/in/emil-kristoffersen-95a890b8" target="_blank">
     <fa-icon [icon]="['fab', 'linkedin']" size="2x" class="linkedin-icon">
     </fa-icon>
-  </a> -->
+  </a>
 
 
   <div class="row">
@@ -23,6 +20,9 @@
       <div [ngStyle]="{'transform': 'translateY('+ translate + '%' +')', 'transition': '.8s'}">
         <div class="text-container" (click)="inspectProject(selectedIndex)">
           <div class="page-text" *ngFor="let i of sliderArray;let select = index;" [ngClass]="{'selected': select == selectedIndex}">
+            <div class="background-number">
+                <h1>{{i.number}}</h1>
+            </div>            
             <h1>{{i.text}}</h1>
             <div class="bar"></div>
             <p>{{i.description}}</p>
