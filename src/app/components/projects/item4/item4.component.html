@@ -1,52 +1,131 @@
 
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="left col-2">
-                <!-- space for navigation -->
-              </div>
-            <div class="title col-10">
-                <!-- <h1>To <span style="background-image: -webkit-linear-gradient(right, #F7971E, #FFD200);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;">do</span> list application
-                  </h1> -->
-                <h1>VIP system redesign</h1>
-            </div>
-          <div class="left col-2">
-            <!-- space for navigation -->
-          </div>
-          <div class="middle col-4">
+  <div class="container">
+      <div class="row">
+          <div class="title center col-12">
+              <!-- <h1>To <span style="background-image: -webkit-linear-gradient(right, #F7971E, #FFD200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">do</span> list application
+                </h1> -->
+              <h1>Futurenow</h1>
               <div class="bar"></div>
               <div class="logo-bar" *ngFor="let i of logoArray">
                 <img src="{{i.img}}" alt="">
               </div>
-  
-              <div class="content-text">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+              <div class="content-text justify">
+                <p>Futurenow is a financial service concept designed as part of my master thesis project in collaboration with 
+                  Danske Bank Group&rsquo;s Customer Engagement department. 
+                  <br>
+                  <br>
+                  The challenge was to design a financial service which could potentially ease negative feelings associated with
+                  unexpected expenses for young adults, as this target group is often impacted by expenses they either has 
+                  forgotten or has not accounted for due to a relative low liquidity. 
+                  <br>
+                  <br>
+                  The project was developed with two other fantastic individuals from my univeristy. Scroll down to see a brief overview 
+                  of the design process.
+                </p>
+                <fa-icon [icon]="['fas', 'sort-down']" size="2x" class="arrow-icon"></fa-icon>
+            </div>
+          </div>
+
+
+
+      
+          <div class="left col-5 justify section shade text-container">
+            <h1 class="number">1</h1>
+            <h3><span style="background-image: -webkit-linear-gradient(right, #F7971E, #FFD200);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;">Understanding </span>
+              the problem area</h3>
+            <p>In order to acquire an understanding of the different users and stakeholders, interviews were conducted on 
+              back employees and the target user group. The same user group where subsequently invited to a co-creative 
+              workshop to explore ideas and further strengthening their life and the needs associated</p>
+          </div>
+      
+            <!-- <fa-icon [icon]="['fas', 'comments']" size="10x" class="fa-icon"></fa-icon> -->
+          <div class="right col-7 section">
+              <div class="image-container">
+                <img src="{{imagePath_1}}" alt="">
               </div>
           </div>
-  
-          <div class="right col-6">
+          
+          
+
+          <div class="gradient-cut2"></div>
+
+
+
+
+
+          <div class="left col-7 section">
               <div class="image-container">
-                <!-- <img src="{{imagePath_1}}" alt=""> -->
-              </div>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="middle col-6">
-              <div class="image-container">
-                  <!-- <img src="{{imagePath_1}}" alt=""> -->
-                  <div class="ipad">
-                      <img src="{{imagePath_2}}" alt="">
-                  </div>
+                  <img src="{{imagePath_2}}" alt="">
                 </div>
           </div>
-  
-          <div class="right col-6">
-             
+          <div class="right col-5 justify section shade text-container">
+              <h1 class="number">2</h1>
+              <h3><span style="background-image: -webkit-linear-gradient(right, #F7971E, #FFD200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">User </span> data analysis</h3>
+              <p>The insights gained from the empirical work were analysed via affinity diagramming, which resulted in eco-system maps
+                and design principles. More so, the data also allowed us to develop user journeys, ultimately supporting us in ideating 
+                on a final service concept.
+              </p>
           </div>
-        </div>
-      </div>  
+
+
+
+
+
+          <div class="left col-5 justify section shade text-container">
+              <h1 class="number">3</h1>
+              <h3>Testing the <span style="background-image: -webkit-linear-gradient(right, #F7971E, #FFD200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">prototype</span></h3>
+              <p>Based on the previous insights a concept was sketched and prototyped in low fidelity. The prototype was created in Adobe XD and 
+                was fully functional on a mobile device. Subsequently we asked potential users to evaluate the prototype, by allowing
+                them to complete a series of tasks on prototype.
+              </p>
+            </div>
+            <div class="right col-7 section">
+                <div class="image-container">
+                  <img src="{{imagePath_3}}" alt="">
+                </div>
+            </div>
+  
+          <div class="gradient-cut3"></div>
+  
+  
+          <div class="left col-12 justify section">
+              <h3><span style="background-image: -webkit-linear-gradient(right, #F7971E, #FFD200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">Final </span> concept</h3>
+              <p>The final concept is a service concept, which is placed within the Mobile Bank. With the flick of switch the user can 
+                switch to a <i>future view</i> which allows them to see their bank accounts balance a week, month and a year ahead. 
+                <br>
+                <br>
+                In addition, the user can see what attributes to said account balance, which allows the user to not only be reminded of 
+                unforseen expenses, but also gain an understanding of what constitutes their economy. 
+                <br>
+                <br>
+                Lastly, the concept will also generate <i>insights</i>, which informs the user on various economic subject relevant 
+                to their situation. 
+                <br>
+                <br>
+
+                By allowing users to gain insights onto their economic situation and the different components consituting it, 
+                the service concept should hopefully ease the negative feelings associated with unexpeced expenses through foresight. 
+              </p>
+          </div>
+          <div class="right col-12 section">
+              <div class="image-container">
+                <img src="{{imagePath_3}}" alt="">
+              </div>
+          </div>
+      
+      
+      </div>
+    </div>  
   
   

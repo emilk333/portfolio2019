@@ -13,9 +13,8 @@ export class Item2Component implements OnInit {
   }
 
   logoArray = [
-    {img: 'assets/img/angularpng.png'},
-    {img: 'assets/img/bootstrap.png'},
-    {img: 'assets/img/firestore.png'},
+    {img: 'assets/img/xd.png'},
+    {img: 'assets/img/photoshop.png'},
   ]
 
   imagePath_1:string = "assets/img/todo/s10_mockup.svg";
