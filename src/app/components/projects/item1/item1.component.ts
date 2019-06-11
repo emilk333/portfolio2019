@@ -12,14 +12,13 @@ export class Item1Component implements OnInit {
   ngOnInit() {
   }
 
-  // logoArray = [
-  //   {img: 'assets/img/angularpng.png'},
-  //   {img: 'assets/img/bootstrap.png'},
-  //   {img: 'assets/img/firestore.png'},
-  // ]
+  logoArray = [
+    {img: 'assets/img/xd.png'},
+  ]
 
-  // imagePath_1:string = "assets/img/todo/s10_mockup.svg";
-  // imagePath_2:string = "assets/img/todo/ipad_mockup.svg";
+  imagePath_1:string = "assets/img/DB/workshop.jpg";
+  imagePath_2:string = "assets/img/DB/UJ.png";
+  imagePath_3:string = "assets/img/DB/lowfi.png";
 
 
 }

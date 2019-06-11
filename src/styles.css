@@ -142,10 +142,13 @@ h1 {
     position: absolute;
     z-index: -999;
     height: 600px;
-    left: -5%;
+    left: 0;
     top: -37%;
-    width: 200%;
-    transform:rotate(-7deg);
+    width: 100%;
+    transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
     background-color: #F8F8F8;
+    overflow: hidden;
   }
   

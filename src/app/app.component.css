@@ -2,22 +2,20 @@
     font-size: 24px!important;
 }
 
-/* .rotate {
-    
-    -webkit-transform: rotate(-90deg);
-    
-    
-    -moz-transform: rotate(-90deg);
-    
-    
-    -ms-transform: rotate(-90deg);
-    
-    
-    -o-transform: rotate(-90deg);
-    
-    
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-} */
+.linkedin-icon {
+    color:  #212529;
+    opacity: 0.2;
+    position: absolute;
+    top: 52px;
+    right: 100px;
+}
+
+.linkedin-icon:hover {
+  color:  #212529;
+  transition: all 0.9s cubic-bezier(0.000, 0.000, 0.230, 1);
+  opacity: 1;
+}
+
 
 .navigation-mobile {
     position: relative;
