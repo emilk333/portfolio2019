@@ -12,4 +12,13 @@ export class Item5Component implements OnInit {
   ngOnInit() {
   }
 
+  logoArray = [
+    {img: 'assets/img/css+html.png'},
+    {img: 'assets/img/js.png'},
+  ]
+
+  // imagePath_1:string = "assets/img/todo/s10_mockup.svg";
+  // imagePath_2:string = "assets/img/todo/ipad_mockup.svg";
+
+
 }

@@ -6,7 +6,7 @@
     color:  #212529;
     opacity: 0.2;
     position: absolute;
-    top: 52px;
+    top: 22px;
     right: 100px;
 }
 
@@ -14,6 +14,32 @@
   color:  #212529;
   transition: all 0.9s cubic-bezier(0.000, 0.000, 0.230, 1);
   opacity: 1;
+}
+
+.filler {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    z-index: 10001;
+}
+
+.nav-container {
+    background-color: #F8F8F8;
+    padding-top: 30px;
+    height: 80px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.nav-container.shade {
+    -webkit-box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+    transition: all 0.5s cubic-bezier(0.000, 0.000, 0.230, 1);
+    opacity: 0.95;
 }
 
 
@@ -32,7 +58,7 @@
     z-index: 1004;
     /* bootstrap block overwrite */
     display: flex !important;
-    padding: 60px 0 0 110px;
+    padding: 0 0 0 110px;
 }
 
 .navigation h3 {
@@ -48,8 +74,8 @@
 
 .stripe-left {
     border-bottom: 2px solid #212529;
-    position: absolute;
-    height: 70px;
+    position: relative;
+    height: 15px;
     width: 100px;
     left: 480px;
 }

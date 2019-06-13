@@ -13,11 +13,11 @@ export class Item4Component implements OnInit {
   }
 
 
-  // logoArray = [
-  //   {img: 'assets/img/angularpng.png'},
-  //   {img: 'assets/img/bootstrap.png'},
-  //   {img: 'assets/img/firestore.png'},
-  // ]
+  logoArray = [
+    {img: 'assets/img/angularpng.png'},
+    {img: 'assets/img/bootstrap.png'},
+    {img: 'assets/img/firestore.png'},
+  ]
 
   // imagePath_1:string = "assets/img/todo/s10_mockup.svg";
   // imagePath_2:string = "assets/img/todo/ipad_mockup.svg";

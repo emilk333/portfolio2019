@@ -17,7 +17,9 @@ export class Item2Component implements OnInit {
     {img: 'assets/img/photoshop.png'},
   ]
 
-  imagePath_1:string = "assets/img/todo/s10_mockup.svg";
-  imagePath_2:string = "assets/img/todo/ipad_mockup.svg";
+  imagePath_1:string = "assets/img/VIP/hospital.jpg";
+  imagePath_2:string = "assets/img/VIP/map.jpg";
+  imagePath_3:string = "assets/img/VIP/idea.jpg";
+  imagePath_4:string = "assets/img/VIP/VIP-interfacedisplay_portfolio.png";
 
 }

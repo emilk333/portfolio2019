@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   sliderArray = [
     {img: 'assets/img/DB/frontpageDB.png', alt: 'futurenow', text: 'Futurenow', description: 'A Service design master thesis project in collaboration with Danske Bank', url: "/item1", number: "1"},
     {img: 'assets/img/VIP/frontpageVIP.png', alt: 'VIP re-design', text: 'VIP Redesign', description: 'A Service design project for the Healthcare sector', url: "/item2", number: "2"},
-    {img: 'assets/img/VINYL/frontpageVINYL.png', alt: 'Vinylondemand', text: 'Vinyl On Demand', description: 'Visual identity for a secondhand metal vinylstore', url: "/item3", number: "3"},
+    {img: 'assets/img/VINYL/frontpageVINYL.png', alt: 'Vinylondemand', text: 'Vinyl On Demand', description: 'Visual identity for online metal vinyl store', url: "/item3", number: "3"},
     {img: 'assets/img/todo/frontpageTODO2.png', alt: 'todo application', text: 'Todo list', description: 'A todo application written in Angular and Firebase', url: "/item4", number: "4"},
     {img: 'assets/img/tømre/frontpageORØ.png', alt: 'tømreren på Orø', text: 'Tømreren på Orø', description: 'Website design for a local carpenter', url: "/item5", number: "5"},
   ];
