@@ -18,7 +18,7 @@ export class Item5Component implements OnInit {
   ]
 
   imagePath_1:string = "assets/img/tømre/field.jpg";
-  imagePath_2:string = "assets/img/tømre/sketch.jpg";
+  imagePath_2:string = "assets/img/tømre/sketches.png";
   imagePath_3:string = "assets/img/tømre/wireframe.png";
 
 
