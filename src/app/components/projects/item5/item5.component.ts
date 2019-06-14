@@ -17,8 +17,9 @@ export class Item5Component implements OnInit {
     {img: 'assets/img/js.png'},
   ]
 
-  // imagePath_1:string = "assets/img/todo/s10_mockup.svg";
-  // imagePath_2:string = "assets/img/todo/ipad_mockup.svg";
+  imagePath_1:string = "assets/img/tømre/field.jpg";
+  imagePath_2:string = "assets/img/tømre/sketch.jpg";
+  imagePath_3:string = "assets/img/tømre/wireframe.png";
 
 
 }

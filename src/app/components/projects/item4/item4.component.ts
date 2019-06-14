@@ -19,8 +19,9 @@ export class Item4Component implements OnInit {
     {img: 'assets/img/firestore.png'},
   ]
 
-  // imagePath_1:string = "assets/img/todo/s10_mockup.svg";
-  // imagePath_2:string = "assets/img/todo/ipad_mockup.svg";
+  imagePath_1:string = "assets/img/todo/todo_all_mockup2.png";
+  // imagePath_2:string = "assets/img/todo/mac_mockup.png";
+  // imagePath_3:string = "assets/img/todo/ipad_mockup.png";
 
 
 }
