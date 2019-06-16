@@ -72,3 +72,39 @@ img {
   
 
   
+
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 400px) {
+
+    
+    .paragraph {
+        position: absolute;
+        left: 8vw;
+        top: 48vh;
+        width: 300px;
+    }
+
+
+    img {
+        height: 50vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: 50% 1%;
+        overflow: hidden;
+      }
+
+
+    .image-container img {
+       left:0;
+    }
+
+
+    .title {
+        position: absolute;
+        top:120px;
+        left: 20px;
+        z-index: 2001;
+    }
+
+
+}
