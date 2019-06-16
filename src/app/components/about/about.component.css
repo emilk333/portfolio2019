@@ -12,14 +12,18 @@ p {
 
 .paragraph p {
     color: #2e2f30;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .paragraph {
     position: absolute;
     left: 8vw;
     top: 40vh;
-    width: 500px;
+    width: 600px;
+}
+
+.text-container {
+    margin-top: -20px;
 }
 
 
@@ -44,7 +48,6 @@ img {
 
 
   .image-container img {
-    
     position: absolute;
     top: -110px;
     right: 0;
@@ -53,15 +56,14 @@ img {
   }
 
   .title {
-      position: absolute;
-      top:70px;
-      right: 5px;
-      z-index: 3000;
+      position: relative;
+      padding-top: 20vh;
+      padding-left: 7vw;
   }
 
 
   .title h1 {
-      text-align: right;
+      text-align: left;
     
   }
 

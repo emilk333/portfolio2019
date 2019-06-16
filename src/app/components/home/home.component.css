@@ -257,7 +257,7 @@ p {
       left: -385px;
       position: absolute;
       width: 550px;
-      height: 80vh;
+      height: 60vh;
       opacity: 0;
       background-position: center;
       will-change: opacity;
