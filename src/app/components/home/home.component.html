@@ -14,7 +14,7 @@
         <div class="text-container" (click)="inspectProject(selectedIndex)">
           <div class="page-text" *ngFor="let i of sliderArray;let select = index;" [ngClass]="{'selected': select == selectedIndex}">
             <div class="background-number">
-                <h1>{{i.number}}</h1>
+                <h2>{{i.number}}</h2>
             </div>            
             <h1>{{i.text}}</h1>
             <div class="bar"></div>

@@ -2,18 +2,23 @@
 
 
 h1 {
-  font-family: 'PlayfairDisplay-Regular';
+  /* font-family: 'PlayfairDisplay-Regular'; */
+  font-family: 'Campton-light';
 }
 
-.background-number h1 {
-  font-size: 14em;
+h2 {
+  font-family: 'Campton';
+}
+
+.background-number h2 {
+  font-size: 13em;
 }
 
 .background-number {
   z-index: -999;
   position: absolute;
-  margin-top: -30px;
-  left: -80px;
+  margin-top: -380px;
+  left: -120px;
   color:#ECEDEF;
 }
 
@@ -170,7 +175,7 @@ h1 {
 
 .bar {
   background-image: linear-gradient(to right, #F7971E 0%, #FFD200 100%);
-  margin: 30px 0 -10px 8px;
+  margin: 15px 0 -5px 8px;
   border-radius: 3px;
   height: 10px;
   width: 100px;
@@ -208,11 +213,6 @@ p {
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 400px) {
   
-h1 {
-  font-family: 'PlayfairDisplay-Regular';
-  font-size: 40px;
-}
-
 
 .linkedin-icon {
   display: none;

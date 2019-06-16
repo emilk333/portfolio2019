@@ -10,6 +10,7 @@ export class AppComponent {
   mobile:boolean;
   status:boolean = false;
   shade:boolean = false;
+  
 
   ngOnInit() {
     if (window.screen.width <= 380) { // 768px portrait
@@ -27,12 +28,13 @@ export class AppComponent {
       if (scrollPosition > 50) {
         console.log(scrollPosition);
         this.shade = true;
+        
       } else {
         this.shade = false;
+        
       }
 
     }
-
 
   showMenu() {
     this.status = !this.status;

@@ -2,39 +2,73 @@
 h1 {
     font-family: 'Campton';
     color:  #badffa;
-    font-size: 4.5em;
+    font-size: 7.5em;
   }
 
 p {
     font-family: 'Campton-light';
     color:  #badffa;
-
 }
 
-.title-text {
-    padding-left: 60px;
-    padding-top: 15px;
+.paragraph p {
+    color: #2e2f30;
+    font-size: 1.3rem;
 }
 
-.content-container {
+.paragraph {
     position: absolute;
-    height: auto;
-    width: 70vw;
-    left: 14%;
-    top: 180px;
+    left: 8vw;
+    top: 40vh;
+    width: 500px;
 }
 
-.about-text {
-    padding-top: 50px;
-    max-width: 700px;
-    text-align: justify;
-    text-justify: inter-word;
+
+.background {
+    position: absolute;
+    margin-top:-110px;
+    background-color: #f8f8f8!important;
+    color: #f8f8f8;
+    height: 100vh;
+    width: 100vw;
 }
+
 
 img {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 100vh;
+    width: 40vw;
     object-fit: cover;
     object-position: 50% 1%;
+    overflow: hidden;
+    
   }
+
+
+  .image-container img {
+    
+    position: absolute;
+    top: -110px;
+    right: 0;
+    z-index: 2000;
+ 
+  }
+
+  .title {
+      position: absolute;
+      top:70px;
+      right: 5px;
+      z-index: 3000;
+  }
+
+
+  .title h1 {
+      text-align: right;
+    
+  }
+
+  .person {
+      margin-top: -50px;
+  }
+
+  
+
+  
