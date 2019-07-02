@@ -20,6 +20,6 @@ export class Item2Component implements OnInit {
   imagePath_1:string = "assets/img/VIP/hospital.jpg";
   imagePath_2:string = "assets/img/VIP/map.jpg";
   imagePath_3:string = "assets/img/VIP/idea.jpg";
-  imagePath_4:string = "assets/img/VIP/VIP-interfacedisplay_portfolio.png";
+  imagePath_4:string = "assets/img/VIP/background2.png";
 
 }

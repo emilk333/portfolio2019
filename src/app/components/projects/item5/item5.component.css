@@ -1,7 +1,7 @@
 
 h1 {
     font-family: 'Campton-light';
-    color: #212529;
+    color: #fff;
     font-size: 5em;
     font-weight: 600;
   }
@@ -15,27 +15,29 @@ p {
 .center {
     margin: auto;
     width: 50%;
-    max-width: 780px;
+    max-width: 750px;
 }
 
 
 .arrow-icon {
-    position: relative;
-    padding-left: 25%;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    right: 50%;
     color: #bfbfbf;
 }
 
 .title {
-    margin-top: 50px;
+    margin-top: 75px;
 }
 
 .keywords {
-    margin-top: -10px;
+    margin-top: -5px;
     padding-left: 5px;
 }
 
 .keywords p {
-    color: #8e8e8e;
+    color: #eaeaea
 }
 
 
@@ -51,8 +53,9 @@ p {
 }
 
 .content-text {
-    padding-top: 130px;
+    padding-top: 180px;
 }
+
 
 .justify {
     text-align: justify;
@@ -68,6 +71,11 @@ p {
     -webkit-box-shadow: 0px 5px 19px -7px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 5px 19px -7px rgba(0,0,0,0.2);
     box-shadow: 0px 5px 19px -7px rgba(0,0,0,0.2);
+}
+
+.image-container-bottom img {
+    width: 100%;
+    height: 100%;
 }
 
 .section {
@@ -92,8 +100,11 @@ p {
 }
 
 .number {
-    margin: -80px 0 -28px 50px;
-    
+    margin: -50px 0 -50px 50px;
+}
+
+.text-container h1 {
+    color: #212529;
 }
 
 .shade {
@@ -105,6 +116,43 @@ p {
     height: 320px;
     background-color: #fff;
 }
+
+
+
+
+.background-top {
+    position: absolute;
+    z-index: -998;
+    height: 600px;
+    left: 0;
+    top: -28%;
+    width: 100%;
+    transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
+    background-image: url("/assets/img/tømre/frontpageORØ2.png");
+    object-fit: scale-down;
+    background-position: 50% 50%;
+    /* background-position: 85% 80%; */
+    overflow: hidden;
+    
+}
+
+.gradient-cut-background-top {
+    position: absolute;
+    z-index: -997;
+    height: 600px;
+    left: 0;
+    top: -28%;
+    width: 100%;
+    transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
+    background-color: #0e1b63;
+    opacity: 0.7;
+    overflow: hidden;
+}
+
 
 .gradient-cut2 {
     position: absolute;

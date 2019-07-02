@@ -23,13 +23,13 @@ import { MouseWheel } from './directives/mouse-wheel.directive';
 
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: AboutComponent },
   { path: 'item1', component: Item1Component },
   { path: 'item2', component: Item2Component },
   { path: 'item3', component: Item3Component },
   { path: 'item4', component: Item4Component },
   { path: 'item5', component: Item5Component },
-  { path: 'about', component: AboutComponent },
+  { path: 'projects', component: HomeComponent },
   
 ];
 

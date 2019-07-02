@@ -10,6 +10,7 @@ export class AppComponent {
   mobile:boolean;
   status:boolean = false;
   shade:boolean = false;
+
   
 
   ngOnInit() {

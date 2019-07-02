@@ -18,9 +18,14 @@ p {
   font-size: 18px;
 }
 
+.background-number {
+  max-height: 110vh;
+  overflow: hidden;
+}
 
 .background-number h2 {
   font-size: 13em;
+  
 }
 
 .background-number {
