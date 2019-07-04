@@ -181,3 +181,96 @@ p {
     background-color: #F8F8F8;
     overflow: hidden;
   }
+
+
+  
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 400px) {
+    
+    h1 {
+        font-family: 'Campton-light';
+        color: #fff;
+        font-size: 3em;
+        font-weight: 600;
+    }
+
+
+    .title {
+        margin-top: 2000px;
+    }
+
+    .center {
+        margin: auto;
+        width: 85%;
+        max-width: 750px;
+    }
+
+    .text-container h3 {
+        padding: 60px 40px 0 35px;
+    }
+
+    .arrow-icon {
+        position: absolute;
+        top: 280px;
+        left: 50%;
+        right: 50%;
+        color: #bfbfbf;
+    }
+
+
+    .row {
+        margin-top: 40px;
+        display: inline-block!important;
+    }
+
+    .keywords {
+        margin-top: -5px;
+        padding-left: 5px;
+    }
+
+    .content-text {
+        padding-top: 260px;
+        padding-bottom: 160px;
+    
+    }
+
+
+    .shade {
+        -webkit-box-shadow: 0px 5px 19px -7px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 5px 19px -7px rgba(0,0,0,0.2);
+        box-shadow: 0px 5px 19px -7px rgba(0,0,0,0.2);
+        border-radius: 0px;
+        margin-top: 130px;
+        height: auto;
+        background-color: #fff;
+    }
+
+    .number {
+        padding-top: 30px;
+    }
+
+    .image-container img {
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+        border-radius: 0px;
+    }
+
+
+    .image-container {
+        margin-top: -15px;
+    }
+
+
+
+    .image-container-bottom img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .top-padding-minus {
+        margin-top: -140px;
+    }
+
+}
+  

@@ -34,5 +34,8 @@ export class MouseWheel {
     if(event.preventDefault) {
         event.preventDefault();
     }
+    setTimeout(() => {
+      console.log("pause")
+    }, 3000);
   }
 }

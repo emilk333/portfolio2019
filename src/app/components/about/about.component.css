@@ -12,13 +12,13 @@ p {
 
 .paragraph p {
     color: #2e2f30;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .paragraph {
     position: absolute;
-    left: 8vw;
-    top: 40vh;
+    left: 60%;
+    top: 50vh;
     width: 600px;
 }
 
@@ -29,7 +29,7 @@ p {
 
 .background {
     position: absolute;
-    margin-top:-110px;
+    margin-top:-80px;
     background-color: #f8f8f8!important;
     color: #f8f8f8;
     height: 100vh;
@@ -39,7 +39,7 @@ p {
 
 img {
     height: 100vh;
-    width: 40vw;
+    width: 34vw;
     object-fit: cover;
     object-position: 50% 1%;
     overflow: hidden;
@@ -47,24 +47,28 @@ img {
   }
 
 
+  .image-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3000;
+  }
+
+
   .image-container img {
     position: absolute;
-    top: -110px;
-    right: 0;
-    z-index: 2000;
- 
+    left: 0;
+    z-index: 3000;
   }
 
   .title {
       position: relative;
-      padding-top: 20vh;
-      padding-left: 7vw;
+      padding-top: 30vh;
+      padding-left: 60%;
   }
-
 
   .title h1 {
       text-align: left;
-    
   }
 
   .person {
@@ -80,8 +84,9 @@ img {
     color:  #212529;
     opacity: 0.2;
     position: absolute;
-    top: 22px;
-    right: 100px;
+    z-index: 3000;
+    top: 30px;
+    right: 50px;
 }
 
 .linkedin-icon:hover {
@@ -98,11 +103,16 @@ img {
   /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 400px) {
 
+
+    .linkedin-icon {
+        display: none;
+    }
+
     
     .paragraph {
         position: absolute;
         left: 8vw;
-        top: 48vh;
+        top: 62vh;
         width: 300px;
     }
 
@@ -120,12 +130,14 @@ img {
        left:0;
     }
 
+  
 
     .title {
+        position: relative;
+        padding-top: 360px;
+        padding-left: 0;
         position: absolute;
-        top:85px;
-        left: 0;
-        z-index: 2001;
+        z-index: 3001;
     }
 
     .paragraph p {
@@ -135,12 +147,14 @@ img {
 
     .background {
         position: absolute;
-        margin-top:-80px;
+        margin-top: 0;
         background-color: #f8f8f8!important;
         color: #f8f8f8;
         height: 100vh;
         width: 100vw;
     }
+
+   
 
 
 }

@@ -1,4 +1,6 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
+import { Inject }  from '@angular/core';
+import { DOCUMENT } from '@angular/common'; 
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,8 @@ export class AppComponent {
   mobile:boolean;
   status:boolean = false;
   shade:boolean = false;
+  element;
+  
 
   
 
@@ -17,9 +21,11 @@ export class AppComponent {
     if (window.screen.width <= 380) { // 768px portrait
       this.mobile = true;
     }
+
+    console.log("Please dont look at my spaghetti code. I'm not a trained developer ^^")
   }
 
-  constructor(public el: ElementRef) {}
+  constructor(public el: ElementRef, @Inject(DOCUMENT) document) {}
 
   @HostListener('window:scroll', ['$event'])
     checkScroll() {
@@ -39,5 +45,10 @@ export class AppComponent {
 
   showMenu() {
     this.status = !this.status;
+    // this.classList.toggle('active'); 
+    this.element = document.getElementById('navigation-mobile');
+    this.element.classList.toggle('active');
   }
+
+
 }

@@ -109,6 +109,9 @@ h3 > a:hover {
 
 .ham {
     cursor: pointer;
+    float: right;
+    padding-top: 20px;
+    margin-right: 26px;
     -webkit-tap-highlight-color: transparent;
     transition: transform 400ms;
     -moz-user-select: none;
@@ -154,6 +157,25 @@ h3 > a:hover {
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 400px) {
+
+
+    .circle {
+        background-color: #fff;
+        border-radius: 50px;
+        position: absolute;
+        top: 25px;
+        right: 32px;
+        float: right;
+        z-index: 1004;
+        width: 75px;
+        height: 75px;
+        -webkit-box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+        box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+    }
+
+
+
     h3 > a{
         font-size: 4rem;
     }
@@ -172,13 +194,15 @@ h3 > a:hover {
 
 
     .nav-container {
-        color: #fff;
+        /* color: #fff; */
+        float: right;
+        background-color: transparent;
         padding-top: 0;
-        height: 80px;
+        /* height: 80px; */
         position: -webkit-sticky; /* Safari */
         position: sticky;
         top: 0;
-        z-index: 2005;
+        z-index: 3005;
     }
 
     /* .filler {

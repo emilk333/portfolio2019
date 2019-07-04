@@ -65,6 +65,9 @@ export class HomeComponent implements OnInit {
     this.mouseWheelDir = 'upward direction';
     console.log(this.mouseWheelDir);
     this.next(x);
+    setTimeout(() => {
+    
+    }, 3000);
   }
 
   mouseWheelDownFunc() {
