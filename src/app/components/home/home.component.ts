@@ -61,19 +61,16 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  mouseWheelUpFunc(x) {
-    this.mouseWheelDir = 'upward direction';
-    console.log(this.mouseWheelDir);
-    this.next(x);
-    setTimeout(() => {
-    
-    }, 3000);
-  }
+  // mouseWheelUpFunc(x) {
+  //   this.mouseWheelDir = 'upward direction';
+  //   console.log(this.mouseWheelDir);
+  //   this.next(x);
+  // }
 
-  mouseWheelDownFunc() {
-    this.mouseWheelDir = 'downward direction';
-    console.log(this.mouseWheelDir);
-  }
+  // mouseWheelDownFunc() {
+  //   this.mouseWheelDir = 'downward direction';
+  //   console.log(this.mouseWheelDir);
+  // }
 
 
 

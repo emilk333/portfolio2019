@@ -24,16 +24,17 @@ p {
 }
 
 .background-number h2 {
-  font-size: 13em;
+  font-size: 11em;
   
 }
 
 .background-number {
   z-index: -999;
   position: absolute;
-  margin-top: -380px;
-  left: -120px;
+  margin-top: -345px;
+  left: -90px;
   color:#ECEDEF;
+  overflow: hidden;
 }
 
 
@@ -51,7 +52,7 @@ p {
     position: absolute;
     height: 70vh;
     width: 50vw;
-    top: 12%;
+    top: 16%;
     left: 30%; 
     right: 0; 
     margin-left: auto; 
@@ -143,7 +144,7 @@ p {
   height: 1vh;
   z-index: 1002;
   position: absolute;
-  left: -75%;
+  left: -550px;
   width: 600px;
   top: 10em;
   justify-content: center;
@@ -176,28 +177,100 @@ p {
     opacity: 1;
     transition: 1s;
   }
+
   
   .next-button {
     position: absolute;
-    top:78%;
-    right: 5px;
+    top:88%;
+    left: -24vw;
     z-index: 1004;
     color: #D5D5D5;
     font-size: 28px;
     cursor: pointer;
     transition: all .2s ease-in-out;
+
+    background-color:#ffffff;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #ffd336;
+    display:inline-block;
+    cursor:pointer;
+    color:#2e2f30;
+    font-family:Arial;
+    font-size:17px;
+    padding:1px 26px;
+    text-decoration:none;
   }
 
   .next-button:hover {
-    transform: scale(1.2);
+    transform: scale(1.03);
+    -webkit-box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
   }
 
 
+  /* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #fff radial-gradient(circle, transparent 1%, #f2f2f2 1%) center/15000%;
+}
+.ripple:active {
+  /* background-color: #6eb9f7; */
+  background-size: 100%;
+  transition: background 0s;
+}
+
+button:focus {outline:0;}
 
 
 
 
 
+
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-height: 700px) {
+
+
+  img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .img-container {
+    left: -3%;
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    /* opacity: 0; */
+    background-position: center;
+    will-change: opacity;
+    transition: opacity .3s;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .logo-container {
+    /*
+    CENTER LOGO
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;  */
+    position: absolute;
+    left: 4em;
+    margin-top: 40px;
+  }
+
+}
+  
 
 
 
@@ -244,7 +317,7 @@ p {
       position: absolute;
       height: 70vh;
       width: 50vw;
-      top: 15%;
+      top: 14%;
       left: 30%; 
       right: 0; 
       margin-left: auto; 
@@ -258,7 +331,7 @@ p {
     }
   
     .img-container {
-      top: 200px;
+      top: 170px;
       left: -385px;
       position: absolute;
       width: 550px;
@@ -373,23 +446,36 @@ p {
       transition: 1s;
     }
     
-    .next-button {
-      position: absolute;
-      top:75%;
-      right: 32px;
-      z-index: 1004;
-      color: #D5D5D5;
-      font-size: 28px;
-      cursor: pointer;
-      transition: all .2s ease-in-out;
-      transform: scale(1.5)
-    }
-  
-    .next-button:hover {
-      transform: scale(1.2);
-    }
-  
-  
+  .next-button {
+    position: absolute;
+    top: 106%;
+    left: -11vw;
+    z-index: 1004;
+    color: #D5D5D5;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    background-color:#ffffff;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #ffd336;
+    display:inline-block;
+    cursor:pointer;
+    color:#2e2f30;
+    font-family:Arial;
+    font-size:17px;
+    padding:1px 26px;
+    text-decoration:none;
+  }
+
+  .next-button:hover {
+    transform: scale(1.03);
+    -webkit-box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 22px -4px rgba(0,0,0,0.1);
+  }
 
   
 }

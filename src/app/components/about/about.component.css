@@ -1,24 +1,46 @@
 
 h1 {
     font-family: 'Campton';
-    color:  #badffa;
     font-size: 7.5em;
+    letter-spacing: -0.05em;
+    color: #000;
   }
 
 p {
     font-family: 'Campton-light';
-    color:  #badffa;
+    
+}
+
+
+
+
+.title {
+    position: relative;
+    padding-top: 32vh;
+    /* padding-left: 90%; */
+    
+}
+
+.title h1 {
+    margin: 0;
+    position: absolute;
+    top: 125%;
+    left: 103%;
+    transform: translate(-50%, -50%);
 }
 
 .paragraph p {
     color: #2e2f30;
     font-size: 1.4rem;
+    
 }
 
 .paragraph {
+    margin: 0;
     position: absolute;
-    left: 60%;
-    top: 50vh;
+    top: 173%;
+    left: 103%;
+    transform: translate(-50%, -50%);
     width: 600px;
 }
 
@@ -61,15 +83,6 @@ img {
     z-index: 3000;
   }
 
-  .title {
-      position: relative;
-      padding-top: 30vh;
-      padding-left: 60%;
-  }
-
-  .title h1 {
-      text-align: left;
-  }
 
   .person {
       margin-top: -50px;
@@ -111,9 +124,9 @@ img {
     
     .paragraph {
         position: absolute;
-        left: 8vw;
-        top: 62vh;
-        width: 300px;
+        left: 50vw;
+        top: 80vh;
+        width: 320px;
     }
 
 
@@ -134,8 +147,8 @@ img {
 
     .title {
         position: relative;
-        padding-top: 360px;
-        padding-left: 0;
+        padding-top: 370px;
+        padding-left: 150px;
         position: absolute;
         z-index: 3001;
     }

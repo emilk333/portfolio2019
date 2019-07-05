@@ -2,7 +2,12 @@
 <div class="container-fluid full-view-width">
   
   <div class="row">
+     
     <div class="content-container col-12">
+        <button class="next-button ripple" (click)="next(x)">
+            <p>Next project</p>
+        </button>
+        
 
       <div mouseWheel class="img-container" *ngFor="let i of sliderArray; let select = index;" (click)="inspectProject(selectedIndex)"
         [ngClass]="{'selected': select == selectedIndex}" (mouseWheelUp)="mouseWheelUpFunc(event)" (mouseWheelDown)="mouseWheelDownFunc(event)">
@@ -19,14 +24,17 @@
             <h1>{{i.text}}</h1>
             <div class="bar"></div>
             <p>{{i.description}}</p>
+            
           </div>
         </div>
       </div>
 
 
-      <div class="next-button">
+      <!-- <div class="next-button">
         <fa-icon [icon]="['fas', 'arrow-down']" (click)="next(x)"></fa-icon>
-      </div>
+      </div> -->
+
+      
 
       <div class="slider">
         <div class="slide-button-parent-container" *ngFor="let i of sliderArray; let x = index" (click)="selected(x)">

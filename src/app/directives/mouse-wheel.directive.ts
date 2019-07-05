@@ -8,6 +8,18 @@ export class MouseWheel {
   @Output() mouseWheelUp = new EventEmitter();
   @Output() mouseWheelDown = new EventEmitter();
 
+
+  throttle(fn, wait) {
+    var time = Date.now();
+    return function() {
+      if ((time + wait - Date.now()) < 0) {
+        fn();
+        time = Date.now();
+      }
+    }
+  }
+
+
   @HostListener('mousewheel', ['$event']) onMouseWheelChrome(event: any) {
     this.mouseWheelFunc(event) 
   }
@@ -38,4 +50,6 @@ export class MouseWheel {
       console.log("pause")
     }, 3000);
   }
+
+
 }
