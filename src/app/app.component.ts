@@ -18,8 +18,9 @@ export class AppComponent {
   
 
   ngOnInit() {
-    if (window.screen.width <= 380) { // 768px portrait
+    if (window.screen.width <= 414) { // 768px portrait
       this.mobile = true;
+      console.log("true");
     }
 
     console.log("Please dont look at my spaghetti code. I'm not a trained developer ^^")

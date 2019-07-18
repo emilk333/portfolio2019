@@ -1,0 +1,176 @@
+h1 {
+    font-family: 'Campton-light';
+    font-size: 7.5em;
+    letter-spacing: -0.05em;
+    color: #000;
+    line-height: 1;
+  }
+
+
+p {
+    font-family: 'Campton-light';
+    font-size: 1.2rem;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.title {
+    padding-top: 80px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+
+ .image-container img {
+     height: 200px;
+     width: 200px;
+     object-fit: cover;
+     border-radius: 50%;
+ }
+
+ .image-container {
+     margin-top: 170px;
+ }
+
+ .body-text {
+     padding-top: 60px;
+     max-width: 51%;
+     text-align: justify;
+     text-justify: inter-word;
+     padding-bottom: 100px;
+ }
+
+
+ .skills-container img {
+    height: 50px;
+    width: 180px;
+}
+
+
+.skills img {
+    margin-top: 8px;
+    height: 40px;
+    width: 40px;
+}
+
+.skills {
+    height: 100px;
+}
+
+.skills-title {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.circle {
+    margin-right: -15px;
+    border: 1px solid #000000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: right;
+}
+
+.circle2 {
+    margin-right: -15px;
+    border: 1px solid #000000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 50px;
+}
+
+.dotx {
+    height: 12px;
+    width: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 20px;
+    float: right;
+  }
+
+  .doty {
+    height: 12px;
+    width: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 20px;
+    float: left;
+  }
+
+.dots {
+    margin-left: -50px;
+}
+
+
+.dotx2 {
+    height: 12px;
+    width: 12px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 20px;
+    float: right;
+}
+
+.doty2 {
+    height: 12px;
+    width: 12px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 20px;
+    float: left;
+}
+
+.skills-container1 {
+    padding-right: -500px;
+}
+
+.bottom {
+    margin-bottom: 200px;
+}
+
+
+.background-top {
+    position: absolute;
+    z-index: -998;
+    height: 600px;
+    left: 0;
+    top: -33%;
+    width: 100%;
+    transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
+    background-image: url("/assets/img/blackplant.jpg");
+    object-fit: cover;
+    background-position: 60% 38%;
+    background-size: 110% 150%;
+    overflow: hidden;
+    
+}
+
+.gradient-cut-background-top {
+    position: absolute;
+    z-index: -997;
+    height: 600px;
+    left: 0;
+    top: -33%;
+    width: 100%;
+    transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
+    background-color: #0e1b63;
+    opacity: 0.7;
+    overflow: hidden;
+}
+

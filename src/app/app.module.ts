@@ -19,6 +19,7 @@ import { Item3Component } from './components/projects/item3/item3.component';
 import { Item4Component } from './components/projects/item4/item4.component';
 import { Item5Component } from './components/projects/item5/item5.component';
 import { MouseWheel } from './directives/mouse-wheel.directive';
+import { MypageComponent } from './components/mypage/mypage.component';
 
 
 
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
   { path: 'item4', component: Item4Component },
   { path: 'item5', component: Item5Component },
   { path: 'projects', component: HomeComponent },
+  { path: 'about', component: MypageComponent },
   
 ];
 
@@ -44,12 +46,13 @@ const appRoutes: Routes = [
     Item4Component,
     MouseWheel,
     Item5Component,
+    MypageComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(
-      appRoutes
+      appRoutes, { useHash: true, scrollPositionRestoration: 'enabled' },
     ),
     FontAwesomeModule,
   ],

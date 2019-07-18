@@ -1,9 +1,14 @@
 
 h1 {
     font-family: 'Campton';
-    font-size: 7.5em;
-    letter-spacing: -0.05em;
+    font-size: 11.5em;
+    letter-spacing: -0.2em;
     color: #000;
+  }
+
+  h2 {
+    font-family: 'Campton-light';
+    font-size: 7.5em;
   }
 
 p {
@@ -12,21 +17,28 @@ p {
 }
 
 
+.time p {
+    color: #a1a1a1;
+    font-size: 1.1rem;
+}
+
+.time {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 53%;
+}
+
+.center {
+    text-align: center;
+}
 
 
 .title {
     position: relative;
-    padding-top: 32vh;
-    /* padding-left: 90%; */
+    padding-top: 22vh;
+    padding-left: 30%;
+    width: 800px;
     
-}
-
-.title h1 {
-    margin: 0;
-    position: absolute;
-    top: 125%;
-    left: 103%;
-    transform: translate(-50%, -50%);
 }
 
 .paragraph p {
@@ -35,13 +47,19 @@ p {
     
 }
 
-.paragraph {
+/* .paragraph {
     margin: 0;
     position: absolute;
     top: 173%;
     left: 103%;
     transform: translate(-50%, -50%);
     width: 600px;
+} */
+
+.paragraph {
+    width: 700px;
+    margin-top: -50px;
+    margin-left: 300px;
 }
 
 .text-container {
@@ -69,19 +87,7 @@ img {
   }
 
 
-  .image-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 3000;
-  }
-
-
-  .image-container img {
-    position: absolute;
-    left: 0;
-    z-index: 3000;
-  }
+  
 
 
   .person {
@@ -114,9 +120,10 @@ img {
   
 
   /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 400px) {
-
-
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
     .linkedin-icon {
         display: none;
     }
@@ -124,7 +131,7 @@ img {
     
     .paragraph {
         position: absolute;
-        left: 50vw;
+        left: 40vw;
         top: 80vh;
         width: 320px;
     }
@@ -139,15 +146,13 @@ img {
       }
 
 
-    .image-container img {
-       left:0;
-    }
-
   
+     
+
 
     .title {
         position: relative;
-        padding-top: 370px;
+        padding-top: 390px;
         padding-left: 150px;
         position: absolute;
         z-index: 3001;

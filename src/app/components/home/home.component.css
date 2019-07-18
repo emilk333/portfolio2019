@@ -15,8 +15,13 @@ h2 {
 
 p {
   font-family: 'Campton-light';
-  font-size: 18px;
+  font-size: 1.2rem;
+  color: #555555;
+  line-height: 1.6;
 }
+
+
+
 
 .background-number {
   max-height: 110vh;
@@ -275,14 +280,10 @@ button:focus {outline:0;}
 
 
 
-
-
-
-
-
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 400px) {
-  
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
   h1 {
     /* font-family: 'PlayfairDisplay-Regular'; */
@@ -448,7 +449,7 @@ button:focus {outline:0;}
     
   .next-button {
     position: absolute;
-    top: 106%;
+    top: 99%;
     left: -11vw;
     z-index: 1004;
     color: #D5D5D5;

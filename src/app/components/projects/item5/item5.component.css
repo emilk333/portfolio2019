@@ -183,10 +183,10 @@ p {
   }
 
 
-
-  /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 400px) {
-    
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
     h1 {
         font-family: 'Campton-light';
         color: #fff;
