@@ -68,6 +68,10 @@ p {
     margin-bottom: 80px;
 }
 
+.skills-container-parent {
+    
+}
+
 .circle {
     margin-right: -15px;
     border: 1px solid #000000;
@@ -108,7 +112,7 @@ p {
   }
 
 .dots {
-    margin-left: -50px;
+    margin-left: 30px;
 }
 
 
@@ -133,7 +137,13 @@ p {
 }
 
 .skills-container1 {
-    padding-right: -500px;
+    margin-left: 30vw;
+    max-width: 300px;
+}
+
+.skills-container {
+    /* margin-left: 550px; */
+    max-width: 300px;
 }
 
 .bottom {
@@ -146,7 +156,7 @@ p {
     z-index: -998;
     height: 600px;
     left: 0;
-    top: -33%;
+    top: -250px;
     width: 100%;
     transform: skewY(-7deg);
     -moz-transform: skewY(-7deg);
@@ -164,7 +174,7 @@ p {
     z-index: -997;
     height: 600px;
     left: 0;
-    top: -33%;
+    top: -250px;
     width: 100%;
     transform: skewY(-7deg);
     -moz-transform: skewY(-7deg);
@@ -174,3 +184,136 @@ p {
     overflow: hidden;
 }
 
+
+
+  /* On screens that are 600px or less, set the background color to olive */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .image-container {
+        margin-top: 220px;
+    }
+   
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: 'Campton-light';
+        font-size: 4.5em;
+        letter-spacing: -0.05em;
+        color: #000;
+        line-height: 1;
+      }
+    
+      .title {
+        padding-top: 80px;
+    }
+    
+    .row {
+        display: inline;
+    }
+
+        
+    .body-text {
+        padding-top: 60px;
+        max-width: 90%;
+        text-align: justify;
+        text-justify: inter-word;
+        padding-bottom: 100px;
+    }
+
+
+    .skills-title {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+
+    .skills-container1 {
+        margin-left: -10px;
+    }
+
+    .skills-container {
+        margin-left: -1px;
+    }
+
+
+    .bottom {
+        margin-bottom: 100px;
+    }
+
+
+    .dotx {
+        height: 12px;
+        width: 12px;
+        background-color: #000;
+        border-radius: 50%;
+        margin-top: 0;
+        margin-left: 20px;
+        float: right;
+      }
+    
+      .doty {
+        height: 12px;
+        width: 12px;
+        background-color: #000;
+        border-radius: 50%;
+        margin-top: 0;
+        margin-left: 20px;
+        float: left;
+      }
+
+
+      .circle {
+        margin-right: -15px;
+        border: 1px solid #000000;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        float: right;
+        margin-left: 20px;
+    }
+    
+    .circle2 {
+        margin-right: 0px;
+        border: 1px solid #000000;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 50px;
+    }
+
+    .dotx2 {
+        height: 12px;
+        width: 12px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        margin-top: 0;
+        margin-left: 20px;
+        float: right;
+    }
+    
+    .doty2 {
+        height: 12px;
+        width: 12px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        margin-top: 0;
+        margin-left: 20px;
+        float: left;
+    }
+
+
+    
+
+
+
+}

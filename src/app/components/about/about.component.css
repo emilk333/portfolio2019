@@ -33,13 +33,7 @@ p {
 }
 
 
-.title {
-    position: relative;
-    padding-top: 22vh;
-    padding-left: 30%;
-    width: 800px;
-    
-}
+
 
 .paragraph p {
     color: #2e2f30;
@@ -58,7 +52,7 @@ p {
 
 .paragraph {
     width: 700px;
-    margin-top: -50px;
+    margin-top: 15vh;
     margin-left: 300px;
 }
 
@@ -124,6 +118,11 @@ img {
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    h2 {
+        font-family: 'Campton-light';
+        font-size: 3.5em;
+      }
+    
     .linkedin-icon {
         display: none;
     }
@@ -131,8 +130,8 @@ img {
     
     .paragraph {
         position: absolute;
-        left: 40vw;
-        top: 80vh;
+        left: 0;
+        top: 40vh;
         width: 320px;
     }
 
@@ -146,21 +145,18 @@ img {
       }
 
 
-  
-     
-
-
-    .title {
-        position: relative;
-        padding-top: 390px;
-        padding-left: 150px;
-        position: absolute;
-        z-index: 3001;
+      .paragraph {
+        width: 300px;
+        margin-top: -50px;
+        margin-left: 40px;
     }
-
-    .paragraph p {
-        color: #2e2f30;
-        font-size: 1.4rem;
+    
+     
+    .time {
+        position: absolute;
+        transform: rotate(0deg);
+        top: 230px;
+        left: 42px;
     }
 
     .background {
